@@ -4,9 +4,10 @@
 
 /* whitespace */
 
-/* ------n */
+/* ------ntes */
 
 :root {
+  --v: #fff;
 }
 
 * {
