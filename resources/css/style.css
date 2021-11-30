@@ -5,11 +5,12 @@
 /* whitespace */
 
 :root {
-  --main-color: #ee11bb;
-  --complementary-color: #00c6bf;
-  /* --grey-color: #f9f9fa; */
+  --main-color: rgb(3, 35, 75);
+  --complementary-color: #538ff8;
+  --grey-color: #f9f9fa;
   --bg-color: #fff7d6;
-  --grey-color: #fff7d6;
+  --bg-color-two: #cecec5;
+  --accent-color: #d4a418;
 }
 
 * {
@@ -21,8 +22,7 @@
 
 html,
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   line-height: 135%;
   font-size: 100%;
@@ -32,8 +32,20 @@ body {
 }
 
 header {
-  font-size: 180%;
-  padding: 10px;
+  /* padding: 10px; */
+}
+
+header h1 {
+  /* padding: 10px; */
+  /* margin-top: 10px; */
+  /* text-align: center; */
+  font-size: 250%;
+  margin-bottom: 15px;
+}
+
+h1 .iconify {
+  color: var(--complementary-color);
+  font-size: 120%;
 }
 
 section,
@@ -58,7 +70,7 @@ section,
   /* border-color: rgba(0, 22, 22, 0.4); */
   /* margin-top: 80px; */
   background: rgb(3, 35, 75);
-  background: -moz-linear-gradient(
+  /* background: -moz-linear-gradient(
     160deg,
     rgba(3, 35, 75, 1) 0%,
     rgba(113, 147, 189, 1) 100%
@@ -73,9 +85,9 @@ section,
     rgba(3, 35, 75, 1) 0%,
     rgba(113, 147, 189, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03234b",endColorstr="#7193bd",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03234b",endColorstr="#7193bd",GradientType=1); */
 
-  color: var(--grey-color);
+  color: var(--bg-color-two);
 }
 
 .main {
@@ -96,6 +108,13 @@ section,
   padding: 0;
   top: 0;
   right: 0; */
+  height: 80px;
+  padding: 20px;
+}
+
+.top {
+  /* border-bottom: 1px solid var(--bg-color-two); */
+  box-shadow: 0 3px 3px 0px var(--bg-color-two);
 }
 
 /* -----nav----- */
@@ -118,7 +137,7 @@ section,
   margin-top: 12%;
 }
 
-nav ul a {
+/* nav ul a {
   list-style: none;
   text-decoration: none;
   color: #000;
@@ -129,6 +148,42 @@ nav ul a li {
   padding: 10px;
   border-bottom: 2px solid rgba(0, 22, 22, 0.4);
   color: var(--grey-color);
+} */
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+  color: var(--bg-color-two);
+  cursor: pointer;
+  width: 80%;
+  /* margin: 0 auto; */
+  /* overflow: hidden; */
+}
+
+.nav-link {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.nav-link:hover {
+  background: var(--complementary-color);
+  color: var(--grey-color);
+  border-left: 5px solid var(--accent-color);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+nav ul a li {
+  list-style: none;
+  padding: 10px;
+  /* border-bottom: 2px solid rgba(0, 22, 22, 0.4); */
+  color: var(--grey-color);
+  font-size: 18px;
+}
+
+.iconify {
+  margin-right: 20px;
+  font-size: 24px;
 }
 
 .test {
