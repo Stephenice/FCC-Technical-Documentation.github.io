@@ -10,7 +10,10 @@
   --grey-color: #f9f9fa;
   --bg-color: #fff7d6;
   --bg-color-two: #cecec5;
-  --accent-color: #d4a418;
+  /* --accent-color: #d4a418; */
+  --accent-color: #42fb39;
+  /* --accent-color: #38ec67; */
+  /* --accent-color: #fc3c17; */
 }
 
 * {
@@ -41,6 +44,7 @@ header h1 {
   /* text-align: center; */
   font-size: 250%;
   margin-bottom: 15px;
+  letter-spacing: 0.12em;
 }
 .main-top .top_title {
   color: var(--accent-color);
@@ -98,7 +102,8 @@ section:nth-child(even) {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03234b",endColorstr="#7193bd",GradientType=1); */
 
-  color: var(--bg-color-two);
+  /* color: var(--bg-color-two); */
+  color: #fff;
   padding-bottom: 40px;
 }
 
@@ -192,8 +197,11 @@ nav ul a li {
   list-style: none;
   padding: 10px;
   /* border-bottom: 2px solid rgba(0, 22, 22, 0.4); */
-  color: var(--grey-color);
+  /* color: var(--grey-color); */
   font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .iconify {
@@ -393,6 +401,13 @@ nav ul a li {
 
 .box:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.header_headline {
+  font-weight: 500;
+}
+.box_header h3 {
+  text-transform: capitalize;
 }
 
 /* code stye */
