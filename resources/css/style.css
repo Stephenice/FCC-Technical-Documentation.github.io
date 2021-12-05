@@ -110,6 +110,7 @@ section:nth-child(even) {
 .main {
   flex: 2 1 75%;
   margin-left: 25%;
+
   /* margin-top: 80px; */
   /* padding: 0; */
 }
@@ -175,7 +176,7 @@ nav ul a {
   text-decoration: none;
   color: var(--bg-color-two);
   cursor: pointer;
-  width: 80%;
+  width: 90%;
   /* margin: 0 auto; */
   /* overflow: hidden; */
 }
@@ -410,6 +411,18 @@ nav ul a li {
   text-transform: capitalize;
 }
 
+.box_header h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box_header h3 a:hover {
+  color: var(--complementary-color);
+}
+
+.description {
+  margin-bottom: 5px;
+}
 /* code stye */
 
 code {
