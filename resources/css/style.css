@@ -247,7 +247,7 @@ nav ul a li {
 
 .profile-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 25%;
   flex-wrap: nowrap;
@@ -305,7 +305,7 @@ nav ul a li {
 }
 
 .profile_name {
-  width: 60%;
+  /* width: 60%; */
   text-align: center;
 }
 
