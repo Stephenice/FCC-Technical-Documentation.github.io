@@ -307,6 +307,7 @@ nav ul a li {
 .profile_name {
   /* width: 60%; */
   text-align: center;
+  margin: 0 10px;
 }
 
 .profile_icon {
