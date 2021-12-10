@@ -407,6 +407,7 @@ nav ul a li {
 
 .header_headline {
   font-weight: 500;
+  text-transform: uppercase;
 }
 .box_header h3 {
   text-transform: capitalize;
