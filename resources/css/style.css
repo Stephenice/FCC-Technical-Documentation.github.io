@@ -359,7 +359,7 @@ nav ul a li {
   font-size: 140%;
 }
 .item {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* text-transform: uppercase; */
 }
 
@@ -424,6 +424,20 @@ nav ul a li {
 
 .description {
   margin-bottom: 5px;
+}
+
+/* ---------------footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--complementary-color);
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
 }
 /* code stye */
 
