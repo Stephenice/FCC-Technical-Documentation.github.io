@@ -489,6 +489,12 @@ pre {
   word-wrap: break-word;
 }
 
+/* **** icon */
+/* .iconify {
+  font-size: 150%;
+  font-weight: bold;
+} */
+
 @media (max-width: 600px) {
   .container {
     display: flex;
