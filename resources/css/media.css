@@ -3,4 +3,37 @@
 /**************************/
 
 @media (max-width: 34em) {
+  .nav {
+    display: none;
+    width: 0;
+  }
+
+  .main {
+    display: flex;
+    flex: 0 0 100%;
+    margin-left: 0%;
+    flex-direction: column;
+  }
+
+  /* .moblie_nav {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    position: fixed;
+  } */
+
+  /* top seach menu */
+  .top {
+    align-items: center;
+    justify-content: center;
+  }
+  .search-container {
+    width: 90%;
+    display: flex;
+  }
+
+  .profile-container {
+    display: none;
+  }
 }
