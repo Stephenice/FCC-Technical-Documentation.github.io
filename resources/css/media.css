@@ -23,7 +23,7 @@
     position: fixed;
   } */
 
-  /* top seach menu */
+  /*--------- top seach menu---------- */
   .top {
     align-items: center;
     justify-content: center;
@@ -35,5 +35,27 @@
 
   .profile-container {
     display: none;
+  }
+
+  /*----------- mobile header----------- */
+  .mobile_header {
+    display: flex;
+    height: 80px;
+    padding: 20px;
+    background: rgb(3, 35, 75);
+    color: #fff;
+  }
+
+  .bar_nav {
+    height: 60px;
+    width: 40px;
+  }
+
+  .box-icon,
+  .bar_nav .outline {
+    /* height: 60px;
+    width: 40px; */
+    font-size: 65px;
+    color: #fff;
   }
 }
