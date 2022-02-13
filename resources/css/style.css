@@ -57,9 +57,9 @@ header {
   font-weight: 600;
 }
 
-.mobile_header {
+/* .mobile_header {
   display: none;
-}
+} */
 
 h1 .iconify {
   color: var(--complementary-color);
@@ -136,6 +136,7 @@ section:nth-child(even) {
   right: 0; */
   height: 80px;
   padding: 20px;
+  display: flex;
 }
 
 .top {
@@ -502,8 +503,10 @@ pre {
   font-size: 150%;
   font-weight: bold;
 } */
-
-.profile_picture {
+/* -----------mobile none element */
+.mobile_profile_picture,
+.mobile_header,
+.mobile_cross {
   display: none;
 }
 

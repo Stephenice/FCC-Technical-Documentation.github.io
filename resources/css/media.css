@@ -97,22 +97,36 @@
     margin-bottom: 5px; */
   }
 
-  .profile_picture {
+  .mobile_profile_picture {
     height: 60px;
     width: 100%;
     display: flex;
     background: #04326c;
     padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
   }
 
-  .profile_picture img {
+  .mobile_profile_picture img {
     /*height: 90px;
-    width: 80px;
-    */
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+   width: 80px;
+   */
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+  }
+
+  .mobile_profile_detail {
+    letter-spacing: 1px;
+  }
+
+  .main-top {
+    justify-content: space-between;
+  }
+
+  .mobile_cross {
+    display: inline-block;
   }
 }
