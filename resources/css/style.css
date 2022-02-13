@@ -503,6 +503,10 @@ pre {
   font-weight: bold;
 } */
 
+.profile_picture {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .container {
     display: flex;
