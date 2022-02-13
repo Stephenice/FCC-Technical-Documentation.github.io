@@ -26,12 +26,19 @@ company_title.forEach((e) => (e.textContent = `Front-End Resources`));
 //--------- footer information
 dateYear.textContent = `© ${footerdate} by Pismap. All rights reserved.`;
 
-// ---------menu
+// ---------menu - Responsive Navigation Bar
+
 bar_open_btn.addEventListener("click", function () {
-  if (bar_id.classList.contains("moblie_nav")) return;
-  bar_id.classList.add("moblie_nav");
+  // if (bar_id.classList.contains("moblie_nav")) return;
+  // bar_id.classList.add("moblie_nav");
+  menu_btn_nav();
 });
 
 close_btn.addEventListener("click", function () {
-  bar_id.classList.remove("moblie_nav");
+  // bar_id.classList.remove("moblie_nav");
+  menu_btn_nav();
 });
+
+const menu_btn_nav = function () {
+  bar_id.classList.toggle("moblie_nav");
+};
