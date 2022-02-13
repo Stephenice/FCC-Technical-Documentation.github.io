@@ -44,18 +44,58 @@
     padding: 20px;
     background: rgb(3, 35, 75);
     color: #fff;
+    overflow: hidden;
   }
 
+  /*----------- icon ----------- */
   .bar_nav {
-    height: 60px;
-    width: 40px;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
   }
 
-  .box-icon,
-  .bar_nav .outline {
-    /* height: 60px;
-    width: 40px; */
-    font-size: 65px;
+  .outline {
     color: #fff;
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+  }
+
+  .outline[data-icon="cil:hamburger-menu"] {
+    position: absolute;
+    top: -10px;
+    left: -9px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  /*----------- company name ----------- */
+  .name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 80%;
+    height: 60px;
+    /* justify-content: start; */
+  }
+
+  .headline {
+    /* padding: 10px; */
+    /* margin-top: 10px; */
+    /* text-align: center; */
+    font-size: 200%;
+    /* margin-bottom: 15px; */
+    /* letter-spacing: 0.12em; */
+    margin: 0;
+  }
+
+  .top_title {
+    border: 1px solid yellow;
+    margin-bottom: 5px;
   }
 }
