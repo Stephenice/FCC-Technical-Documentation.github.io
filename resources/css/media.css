@@ -15,12 +15,12 @@
     flex-direction: column;
   }
 
-  /* .moblie_nav {
+  .moblie_nav {
     display: flex;
     flex-direction: column;
     width: 90%;
     position: fixed;
-  } */
+  }
 
   /*--------- top seach menu---------- */
   .top {
