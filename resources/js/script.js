@@ -5,7 +5,7 @@ const company_name = document.querySelectorAll(".headline");
 const company_title = document.querySelectorAll(".top_title");
 const bar_open_btn = document.querySelector(".bar_nav");
 const bar_id = document.querySelector("#navbar");
-const 
+const close_btn = document.querySelector(".mobile_cross");
 
 //---------- global variable
 const footerdate = new Date().getFullYear();
@@ -27,6 +27,11 @@ company_title.forEach((e) => (e.textContent = `Front-End Resources`));
 dateYear.textContent = `© ${footerdate} by Pismap. All rights reserved.`;
 
 // ---------menu
-bar_btn.addEventListener("click", function () {
+bar_open_btn.addEventListener("click", function () {
+  if (bar_id.classList.contains("moblie_nav")) return;
   bar_id.classList.add("moblie_nav");
+});
+
+close_btn.addEventListener("click", function () {
+  bar_id.classList.remove("moblie_nav");
 });
