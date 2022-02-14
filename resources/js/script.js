@@ -6,6 +6,7 @@ const company_title = document.querySelectorAll(".top_title");
 const bar_open_btn = document.querySelector(".bar_nav");
 const bar_id = document.querySelector("#navbar");
 const close_btn = document.querySelector(".mobile_cross");
+const nav_items = document.querySelectorAll(".nav-link");
 
 //---------- global variable
 const footerdate = new Date().getFullYear();
@@ -42,3 +43,9 @@ close_btn.addEventListener("click", function () {
 const menu_btn_nav = function () {
   bar_id.classList.toggle("moblie_nav");
 };
+
+nav_items.forEach((e) => {
+  e.addEventListener("click", function (e) {
+    menu_btn_nav();
+  });
+});

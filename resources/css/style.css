@@ -395,6 +395,7 @@ nav ul a .links {
   align-items: center;
   /* align-content: center; */
   font-size: 140%;
+  margin-bottom: 10px;
 }
 .item {
   /* margin-bottom: 20px; */

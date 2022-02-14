@@ -28,7 +28,7 @@
     justify-content: center;
   }
   .search-container {
-    width: 90%;
+    width: 100%;
     display: flex;
   }
 
@@ -128,4 +128,33 @@
   .mobile_cross {
     display: inline-block;
   }
+
+  /* --------------resource_container
+-------- */
+  .resource_container {
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .resource_box {
+    width: calc(50% - 15px);
+    margin-bottom: 15px;
+  }
+
+  .box_items:not(:nth-child(2n + 0)) {
+    margin-right: 0px;
+    /* align-items: left; */
+  }
+
+  .box_items:nth-child(2n + 0) {
+    margin-right: 0px;
+    align-items: left;
+  }
+}
+
+/**************************/
+/* BELOW 322px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
 }
