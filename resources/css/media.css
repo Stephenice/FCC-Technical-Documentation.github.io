@@ -410,9 +410,6 @@
 
 @media (max-width: 21em) {
   .resource_box {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    margin-bottom: 30px;
   }
 }
