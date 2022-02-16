@@ -25,7 +25,7 @@ company_name.forEach((e) => (e.textContent = `CODELOG`));
 company_title.forEach((e) => (e.textContent = `Front-End Resources`));
 
 //--------- footer information
-dateYear.textContent = `© ${footerdate} by Pismap. All rights reserved.`;
+dateYear.textContent = `© ${footerdate} All rights reserved. Designed and Developed by Stephen Ijeh.`;
 
 // ---------menu - Responsive Navigation Bar
 
