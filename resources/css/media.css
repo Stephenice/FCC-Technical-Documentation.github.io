@@ -259,10 +259,10 @@
 /**************************/
 
 @media (max-width: 34em) {
-  html,
+  /* html,
   body {
     font-size: 110%;
-  }
+  } */
 
   .nav {
     display: none;
@@ -419,10 +419,10 @@
 /**************************/
 
 @media (max-width: 21em) {
-  html,
+  /* html,
   body {
     font-size: 110%;
-  }
+  } */
 
   .resource_box {
     width: 100%;
