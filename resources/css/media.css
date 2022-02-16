@@ -95,6 +95,11 @@
 /**************************/
 
 @media (max-width: 44em) {
+  html,
+  body {
+    font-size: 110%;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -254,6 +259,11 @@
 /**************************/
 
 @media (max-width: 34em) {
+  html,
+  body {
+    font-size: 110%;
+  }
+
   .nav {
     display: none;
     width: 0;
@@ -409,6 +419,11 @@
 /**************************/
 
 @media (max-width: 21em) {
+  html,
+  body {
+    font-size: 110%;
+  }
+
   .resource_box {
     width: 100%;
   }
