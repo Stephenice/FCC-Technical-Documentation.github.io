@@ -21,7 +21,7 @@ document.querySelectorAll(".nav-link").forEach(function (el) {
 });
 
 // --------- company name and title
-company_name.forEach((e) => (e.textContent = `PISMAP`));
+company_name.forEach((e) => (e.innerHTML = `CODELOG`));
 company_title.forEach((e) => (e.textContent = `Front-End Resources`));
 
 //--------- footer information

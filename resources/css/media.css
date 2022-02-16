@@ -95,10 +95,10 @@
 /**************************/
 
 @media (max-width: 44em) {
-  html,
+  /* html,
   body {
     font-size: 110%;
-  }
+  } */
 
   .container {
     display: flex;
