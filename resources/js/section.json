@@ -1,0 +1,35 @@
+{
+  "tools": [
+    {
+      "id": "1",
+      "image": " ",
+      "url": " ",
+      "name": "Visual Studio Code",
+      "description": "One of the best text editor that is specialized for writing software."
+    }
+  ],
+
+  "html": [
+    { "id": "1", "image": " ", "url": " ", "name": " ", "description": " " }
+  ],
+
+  "javascript": [{}],
+
+  "fonts": [{}],
+
+  "color": [{}],
+
+  "images": [{}],
+
+  "icons": [{}],
+
+  "design": [{}],
+
+  "blogs": [{}],
+
+  "algorithms": [{}],
+
+  "youtube": [{}]
+}
+
+// Visual Studio Code
