@@ -31,12 +31,15 @@ const header_item = [
 const url_link = `../resources/section.json`;
 
 // fetch data
-fetch(url_link)
-  .then((res) => res.json())
-  .then((data) => {
-    render_data(data);
-  })
-  .catch((err) => err);
+function init(url_link) {
+  fetch(url_link)
+    .then((res) => res.json())
+    .then((data) => {
+      render_data(data);
+    })
+    .catch((err) => err);
+}
+init(url_link);
 
 function render_data(data) {
   // get data property
@@ -65,7 +68,7 @@ function render_data(data) {
     if (get_data_index[index] === get_header_index[index]) {
       const name = get_data_property[index];
       render_items(data[name], header_item[index]);
-      console.log(data[name], header_item[index]);
+      // console.log(data[name], header_item[index]);
     }
   }
 }
