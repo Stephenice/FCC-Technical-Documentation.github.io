@@ -185,27 +185,71 @@
   ],
 
   "design": [
-    { "id": "800", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "801", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "802", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "800",
+      "image": "resources/image/siteInspire.png",
+      "url": "https://www.siteinspire.com/",
+      "name": "SiteInspire",
+      "description": "Siteinspire is a showcase of the finest web and interactive design."
+    },
+    {
+      "id": "801",
+      "image": "resources/image/awwwards.png",
+      "url": "https://www.awwwards.com/",
+      "name": "Awwwards",
+      "description": "Awwwards is pretty much the gold standard when it comes to acknowledging the highest-quality web design produced today."
+    },
+    {
+      "id": "802",
+      "image": "resources/image/Behance.jpeg",
+      "url": "https://www.behance.net/",
+      "name": "Behance",
+      "description": "Easy to find massive amounts of web design inspiration from their huge, diverse creative community. "
+    }
   ],
 
   "blogs": [
-    { "id": "900", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "901", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "902", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "900",
+      "image": "resources/image/fcc.png",
+      "url": "https://www.freecodecamp.org/",
+      "name": "FreeCodeCamp",
+      "description": "Great learning web platform to help people learn to code for free."
+    },
+    {
+      "id": "901",
+      "image": "resources/image/stackoverflow.png",
+      "url": "https://stackoverflow.com/",
+      "name": "Stack Overflow",
+      "description": "Biggest programmer community. Ask questions and find best answer to your technical question. Also help others answer theirs."
+    },
+    {
+      "id": "902",
+      "image": "resources/image/css-tricks-3.png",
+      "url": "https://css-tricks.com/",
+      "name": "CSS Tricks",
+      "description": "Keeping yourself up-to-date is paramount. Css Tricks provide daily articles, guides, and even an almanac. mainly focus on front-end development."
+    }
   ],
 
   "algorithms": [
-    { "id": "000", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "001", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "002", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "000",
+      "image": "resources/image/youtube.png",
+      "url": "https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O",
+      "name": "Algorithms Lecture",
+      "description": "Free youtube Algorithms course by <a href='https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw' target='_blank'>Abdul Bari</a> mostly written in C++ Programming."
+    }
   ],
 
   "youtube": [
-    { "id": "1000", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "1001", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "1002", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "1000",
+      "image": "resources/image/CodingTrain.jpg",
+      "url": "https://www.youtube.com/c/TheCodingTrain",
+      "name": "The Coding Train",
+      "description": "The Coding Train is on its way with creative coding video tutorials on subjects ranging from the basics of programming languages like JavaScript to algorithmic art, machine learning, simulation, generative poetry, and more."
+    }
   ],
 
   "test": [
