@@ -62,39 +62,126 @@
   ],
 
   "css": [
-    { "id": "300", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "301", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "302", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "3000",
+      "image": "resources/image/mdn.png",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference",
+      "name": "CSS Reference",
+      "description": "MDN CSS Reference describes every property and concept of CSS."
+    },
+    {
+      "id": "3001",
+      "image": "resources/image/caniuse.png",
+      "url": "https://caniuse.com/",
+      "name": "caniuse",
+      "description": "'Can I use' provides up-to-date browser support tables for front-end technologies on desktop and mobile web browsers."
+    },
+    {
+      "id": "3002",
+      "image": "resources/image/css-tricks-3.png",
+      "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+      "name": "Complete Guide to Flexbox",
+      "description": "Useful flexbox reference, focusing on all the different possible properties for the parent element and the child elements."
+    },
+    {
+      "id": "3001",
+      "image": "resources/image/codrops.png",
+      "url": "http://tympanus.net/codrops/css_reference/",
+      "name": "CSS Reference",
+      "description": "Useful CSS reference with all the important properties and info to learn CSS from the basics"
+    },
+    {
+      "id": "3002",
+      "image": "resources/image/30css.svg",
+      "url": "https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048",
+      "name": "30 Selectors Must Know",
+      "description": "List of 30 most important CSS selectors every front-end developers should know by Jeffrey Way."
+    }
   ],
 
   "javascript": [
-    { "id": "300", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "301", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "302", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "300",
+      "image": "resources/image/mdn.png",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+      "name": "JavaScript Reference",
+      "description": "MDN JavaScript Reference help understanding some of its capabilities or features."
+    },
+    {
+      "id": "301",
+      "image": "resources/image/mdn.png",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table",
+      "name": "JS Operator precedence table",
+      "description": "Understand the Operator order from highest precedence to lowest precedence is necessary to evaluate"
+    }
   ],
 
   "fonts": [
-    { "id": "400", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "401", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "402", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "400",
+      "image": "resources/image/googlefonts.png",
+      "url": "https://fonts.google.com/",
+      "name": "Google Fonts",
+      "description": "Most popular free and easy to use webfont library."
+    }
   ],
 
   "color": [
-    { "id": "500", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "501", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "502", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "500",
+      "image": "resources/image/material_palette.jpg",
+      "url": "https://www.materialpalette.com/",
+      "name": "Material Palette",
+      "description": "Material Design palette generated and downloadable color palette."
+    },
+    {
+      "id": "501",
+      "image": "resources/image/opencolor.png",
+      "url": "https://yeun.github.io/open-color/",
+      "name": "Open color",
+      "description": "Open color is an open-source color scheme. Optimized for UI like font, background, border, etc."
+    }
   ],
 
   "images": [
-    { "id": "600", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "601", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "602", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "600",
+      "image": "resources/image/unsplash.png",
+      "url": "https://unsplash.com/",
+      "name": "Unsplash",
+      "description": "Over 2 million free high-resolution images brought to you by the world’s most generous community of photographers."
+    },
+    {
+      "id": "601",
+      "image": "resources/image/pexels.png",
+      "url": "https://www.pexels.com/",
+      "name": "Pexels",
+      "description": "Free stock photos, royalty free images & videos shared by creators."
+    },
+    {
+      "id": "602",
+      "image": "resources/image/pixaby.png",
+      "url": "https://pixabay.com/",
+      "name": "Pixabay",
+      "description": "Over 2.6 million+ high quality stock images, videos and music shared by our talented community"
+    }
   ],
 
   "icons": [
-    { "id": "700", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "701", "image": " ", "url": " ", "name": " ", "description": " " },
-    { "id": "702", "image": " ", "url": " ", "name": " ", "description": " " }
+    {
+      "id": "700",
+      "image": "resources/image/44226736.png",
+      "url": "https://iconify.design/",
+      "name": "Iconify",
+      "description": "Iconify is the most versatile icon framework."
+    },
+    {
+      "id": "701",
+      "image": "resources/image/boxicons.JPG",
+      "url": "https://boxicons.com/",
+      "name": "Boxicons",
+      "description": "Open Source icons carefully crafted for designers & developers."
+    }
   ],
 
   "design": [

@@ -2,7 +2,7 @@
 const tools_box = document.querySelector(".tools_box");
 const html_box = document.querySelector(".html_box");
 const css_box = document.querySelector(".css_box");
-const javascript_box = document.querySelector(".html_box");
+const javascript_box = document.querySelector(".javascript_box");
 const fonts_box = document.querySelector(".fonts_box");
 const colors_box = document.querySelector(".colors_box");
 const images_box = document.querySelector(".images_box");
@@ -36,24 +36,43 @@ fetch(url_link)
   .then((data) => {
     render_data(data);
   })
-  .catch();
+  .catch((err) => err);
 
 function render_data(data) {
-  const x = [];
+  // get data property
+  const get_data_property = [];
   for (const property in data) {
-    x.push(property);
-    console.log(x);
+    get_data_property.push(property);
   }
+  console.log(get_data_property);
 
-  console.log(data);
-  if (data.tools) {
-    render_items(data.tools, tools_box);
+  // get and set data property index
+  const get_data_index = [];
+  get_data_property.map(function (v, i) {
+    get_data_index.push(i);
+  });
+  console.log(get_data_index);
+
+  // get header selector index
+  const get_header_index = [];
+  header_item.forEach((data, dataI) => {
+    get_header_index.push(dataI);
+  });
+  console.log(get_header_index);
+
+  // set condition
+  for (let index = 0; index < get_header_index.length; index++) {
+    if (get_data_index[index] === get_header_index[index]) {
+      const name = get_data_property[index];
+      render_items(data[name], header_item[index]);
+      console.log(data[name], header_item[index]);
+    }
   }
 }
 
 function render_items(data_items, itemsbox) {
-  console.log(data_items);
   for (let index = 0; index < data_items.length; index++) {
+    console.log(data_items.length);
     const html = `
   <div class="resource_box box_items">
   <div class="box_img box">
