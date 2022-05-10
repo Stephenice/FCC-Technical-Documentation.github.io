@@ -12,24 +12,46 @@ const blogs_box = document.querySelector(".blogs_box");
 const algorithms_box = document.querySelector(".algorithms_box");
 const youtube_box = document.querySelector(".youtube_box");
 
+// Array selector
+const header_item = [
+  tools_box,
+  html_box,
+  css_box,
+  javascript_box,
+  fonts_box,
+  colors_box,
+  images_box,
+  icons_box,
+  design_box,
+  blogs_box,
+  algorithms_box,
+  youtube_box,
+];
+
 const url_link = `../resources/section.json`;
 
 // fetch data
 fetch(url_link)
   .then((res) => res.json())
   .then((data) => {
-    console.log(data.tools.length);
     render_data(data);
   })
   .catch();
 
 function render_data(data) {
+  const x = [];
+  for (const property in data) {
+    x.push(property);
+    console.log(x);
+  }
+
+  console.log(data);
   if (data.tools) {
-    render_items(data.tools);
+    render_items(data.tools, tools_box);
   }
 }
 
-function render_items(data_items) {
+function render_items(data_items, itemsbox) {
   console.log(data_items);
   for (let index = 0; index < data_items.length; index++) {
     const html = `
@@ -53,6 +75,6 @@ function render_items(data_items) {
   </div>
 </div>
   `;
-    tools_box.insertAdjacentHTML("beforeend", html);
+    itemsbox.insertAdjacentHTML("beforeend", html);
   }
 }

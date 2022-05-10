@@ -61,6 +61,12 @@
     }
   ],
 
+  "css": [
+    { "id": "300", "image": " ", "url": " ", "name": " ", "description": " " },
+    { "id": "301", "image": " ", "url": " ", "name": " ", "description": " " },
+    { "id": "302", "image": " ", "url": " ", "name": " ", "description": " " }
+  ],
+
   "javascript": [
     { "id": "300", "image": " ", "url": " ", "name": " ", "description": " " },
     { "id": "301", "image": " ", "url": " ", "name": " ", "description": " " },
