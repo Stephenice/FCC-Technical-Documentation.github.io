@@ -15,7 +15,7 @@ const youtube_box = document.querySelector(".youtube_box");
 const input_search = document.querySelector(".input_search");
 const submit_button = document.querySelector(".submit_button");
 
-// Array selector
+//-------------- Array selector
 const header_item = [
   tools_box,
   html_box,
@@ -33,13 +33,12 @@ const header_item = [
 
 const url_link = `../resources/section.json`;
 
-// fetch data
+//------------------ fetch data
 function init(url_link) {
   fetch(url_link)
     .then((res) => res.json())
     .then((data) => {
       render_data(data);
-      // search_box(data);
     })
     .catch((err) => err);
 }
@@ -71,46 +70,38 @@ function render_data(data) {
       const name = get_data_property[index];
       render_items(data[name], header_item[index]);
       // render_items(0, 0);
-      search_box(data[name]);
-      document.querySelector(".add").style.display = "none";
+      // search_box(data[name]);
     }
   }
 }
 
 //----------- search box
-function search_box(datas) {
-  // console.log(datas);
-  submit_button.addEventListener("click", function (e) {
-    e.preventDefault();
-    remove_section();
-    // console.log(submit_button);
-    const search = input_search.value;
-    const s = search;
-    if (search === "") return;
+// function search_box(datas) {
+//   submit_button.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    let matches = datas.filter((data) => {
-      const regex = new RegExp(`^${search}`, "gi");
-      const res = data.name.match(regex);
-      return data.name.match(regex);
-    });
+//     const search = input_search.value;
 
-    if (matches.length === 0) return;
-    console.log(matches[1].id);
+//     if (search === "") return;
+//     remove_section();
 
-    render_items(matches, add_box);
-    // console.log(matches[1].id);
-    // console.log(add_box);
-  });
-}
+//     let matches = datas.filter((data) => {
+//       const regex = new RegExp(`^${search}`, "gi");
+//       const res = data.name.match(regex);
+//       return data.name.match(regex);
+//     });
 
-// remove items
-function remove_section() {
-  const remove_main = document.querySelectorAll(".main-section");
-  remove_main.forEach((element) => {
-    element.style.display = "none";
-  });
-  document.querySelector(".add").style.display = "block";
-}
+//     console.log(typeof matches);
+//     if (matches.length === 0) return;
+//     console.log(matches[1].id);
+
+//     render_items(matches, add_box);
+//   });
+// }
+
+// -------------------input empty
+
+//------------------ remove items
 
 // render data to all section item
 function render_items(data_items, itemsbox) {
