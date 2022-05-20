@@ -1,4 +1,5 @@
 "use strict";
+const add_box = document.querySelector(".add_box");
 const tools_box = document.querySelector(".tools_box");
 const html_box = document.querySelector(".html_box");
 const css_box = document.querySelector(".css_box");
@@ -11,6 +12,8 @@ const design_box = document.querySelector(".design_box");
 const blogs_box = document.querySelector(".blogs_box");
 const algorithms_box = document.querySelector(".algorithms_box");
 const youtube_box = document.querySelector(".youtube_box");
+const input_search = document.querySelector(".input_search");
+const submit_button = document.querySelector(".submit_button");
 
 // Array selector
 const header_item = [
@@ -36,46 +39,82 @@ function init(url_link) {
     .then((res) => res.json())
     .then((data) => {
       render_data(data);
+      // search_box(data);
     })
     .catch((err) => err);
 }
 init(url_link);
 
+//---------------- render data
 function render_data(data) {
   // get data property
   const get_data_property = [];
   for (const property in data) {
     get_data_property.push(property);
   }
-  console.log(get_data_property);
 
   // get and set data property index
   const get_data_index = [];
   get_data_property.map(function (v, i) {
     get_data_index.push(i);
   });
-  console.log(get_data_index);
 
   // get header selector index
   const get_header_index = [];
   header_item.forEach((data, dataI) => {
     get_header_index.push(dataI);
   });
-  console.log(get_header_index);
 
   // set condition
   for (let index = 0; index < get_header_index.length; index++) {
     if (get_data_index[index] === get_header_index[index]) {
       const name = get_data_property[index];
       render_items(data[name], header_item[index]);
-      // console.log(data[name], header_item[index]);
+      // render_items(0, 0);
+      search_box(data[name]);
+      document.querySelector(".add").style.display = "none";
     }
   }
 }
 
+//----------- search box
+function search_box(datas) {
+  // console.log(datas);
+  submit_button.addEventListener("click", function (e) {
+    e.preventDefault();
+    remove_section();
+    // console.log(submit_button);
+    const search = input_search.value;
+    const s = search;
+    if (search === "") return;
+
+    let matches = datas.filter((data) => {
+      const regex = new RegExp(`^${search}`, "gi");
+      const res = data.name.match(regex);
+      return data.name.match(regex);
+    });
+
+    if (matches.length === 0) return;
+    console.log(matches[1].id);
+
+    render_items(matches, add_box);
+    // console.log(matches[1].id);
+    // console.log(add_box);
+  });
+}
+
+// remove items
+function remove_section() {
+  const remove_main = document.querySelectorAll(".main-section");
+  remove_main.forEach((element) => {
+    element.style.display = "none";
+  });
+  document.querySelector(".add").style.display = "block";
+}
+
+// render data to all section item
 function render_items(data_items, itemsbox) {
   for (let index = 0; index < data_items.length; index++) {
-    console.log(data_items.length);
     const html = `
   <div class="resource_box box_items">
   <div class="box_img box">

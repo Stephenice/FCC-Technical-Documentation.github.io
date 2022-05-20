@@ -23,7 +23,7 @@
     />
     <!-- js -->
     <script src="resources/js/script.js" defer></script>
-    <script src="resources/js/api.js" defer></script>
+    <!-- <script src="resources/js/api.js" defer></script> -->
   </head>
 
   <body>
@@ -232,7 +232,23 @@
         </header>
 
         <!-- section page -->
-        <section class="main-section" id="tools">
+        <!-- add -->
+        <section class="main-section add" id="add">
+          <header class="section_header">
+            <div class="item header_icon">
+              <span class="iconify icon" data-icon="feather:tool"></span>
+            </div>
+
+            <div class="item header_headline">TOOLS</div>
+          </header>
+
+          <article>
+            <div class="resource_container add_box"></div>
+          </article>
+        </section>
+
+        <!-- tool -->
+        <section class="main-section add" id="tools">
           <header class="section_header">
             <div class="item header_icon">
               <span class="iconify icon" data-icon="feather:tool"></span>
@@ -243,7 +259,6 @@
 
           <article>
             <div class="resource_container tools_box"></div>
-            ;
           </article>
         </section>
 
@@ -427,6 +442,7 @@
     </div>
 
     <!-- font -->
+    <script src="resources/js/api.js" defer></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
 </html>

@@ -69,7 +69,7 @@ h1 .iconify {
 section,
 .main-section {
   /* margin-top: 80px; */
-
+  /* display: block; */
   padding: 80px 10px;
 }
 section:nth-child(odd) {
