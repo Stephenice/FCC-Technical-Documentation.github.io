@@ -69,8 +69,6 @@ function render_data(data) {
     if (get_data_index[index] === get_header_index[index]) {
       const name = get_data_property[index];
       render_items(data[name], header_item[index]);
-      // render_items(0, 0);
-      // search_box(data[name]);
     }
   }
 }

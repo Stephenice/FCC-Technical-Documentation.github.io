@@ -8,7 +8,7 @@ const bar_id = document.querySelector("#navbar");
 const close_btn = document.querySelector(".mobile_cross");
 const nav_items = document.querySelectorAll(".nav-link");
 
-//---------- global variable
+//---------- date global variable
 const footerdate = new Date().getFullYear();
 
 //----------- nav smooth behavior
